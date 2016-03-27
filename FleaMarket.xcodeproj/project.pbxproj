@@ -17,6 +17,7 @@
 		E9536CAE1CA7FFA20055720C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9536CAC1CA7FFA20055720C /* LaunchScreen.storyboard */; };
 		E9536CB91CA7FFA20055720C /* FleaMarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536CB81CA7FFA20055720C /* FleaMarketTests.m */; };
 		E9536CC41CA7FFA20055720C /* FleaMarketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536CC31CA7FFA20055720C /* FleaMarketUITests.m */; };
+		E9C125341CA803B0005DE17C /* TonglmTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C125331CA803B0005DE17C /* TonglmTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		E9536CBF1CA7FFA20055720C /* FleaMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleaMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9536CC31CA7FFA20055720C /* FleaMarketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FleaMarketUITests.m; sourceTree = "<group>"; };
 		E9536CC51CA7FFA20055720C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C125321CA803B0005DE17C /* TonglmTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TonglmTestViewController.h; sourceTree = "<group>"; };
+		E9C125331CA803B0005DE17C /* TonglmTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TonglmTestViewController.m; sourceTree = "<group>"; };
 		FFCE24394E3098B6A18BDA9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +108,8 @@
 		E9536C8F1CA7FFA20055720C = {
 			isa = PBXGroup;
 			children = (
+				E9C125301CA80364005DE17C /* BusinessLogicLayer */,
+				E9C1252F1CA80359005DE17C /* PersistenceLayer */,
 				E9536C9A1CA7FFA20055720C /* FleaMarket */,
 				E9536CB71CA7FFA20055720C /* FleaMarketTests */,
 				E9536CC21CA7FFA20055720C /* FleaMarketUITests */,
@@ -127,6 +132,7 @@
 		E9536C9A1CA7FFA20055720C /* FleaMarket */ = {
 			isa = PBXGroup;
 			children = (
+				E9C125311CA80389005DE17C /* TongleimingTest */,
 				E9536C9E1CA7FFA20055720C /* AppDelegate.h */,
 				E9536C9F1CA7FFA20055720C /* AppDelegate.m */,
 				E9536CA11CA7FFA20055720C /* ViewController.h */,
@@ -165,6 +171,29 @@
 				E9536CC51CA7FFA20055720C /* Info.plist */,
 			);
 			path = FleaMarketUITests;
+			sourceTree = "<group>";
+		};
+		E9C1252F1CA80359005DE17C /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		E9C125301CA80364005DE17C /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		E9C125311CA80389005DE17C /* TongleimingTest */ = {
+			isa = PBXGroup;
+			children = (
+				E9C125321CA803B0005DE17C /* TonglmTestViewController.h */,
+				E9C125331CA803B0005DE17C /* TonglmTestViewController.m */,
+			);
+			name = TongleimingTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9536CA31CA7FFA20055720C /* ViewController.m in Sources */,
+				E9C125341CA803B0005DE17C /* TonglmTestViewController.m in Sources */,
 				E9536CA01CA7FFA20055720C /* AppDelegate.m in Sources */,
 				E9536C9D1CA7FFA20055720C /* main.m in Sources */,
 				E9536CA91CA7FFA20055720C /* FleaMarket.xcdatamodeld in Sources */,
