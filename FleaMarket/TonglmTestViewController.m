@@ -8,6 +8,10 @@
 
 #import <BmobSDK/Bmob.h>
 #import "TonglmTestViewController.h"
+#import "SecondhandDAO.h"
+#import "UserDAO.h"
+#import "ModelGroup.h"
+#import "VOGroup.h"
 
 @interface TonglmTestViewController ()
 
@@ -18,19 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //SecondhandDAO *sdao = [SecondhandDAO sharedManager];
+    //[sdao findAll];
     
-    // 测试数据库
-    BmobQuery *bquery = [BmobQuery queryWithClassName:@"user_test"];
-    [bquery getObjectInBackgroundWithId:@"ACdO0006" block:^(BmobObject *object, NSError *error) {
-        if (error) {
-            NSLog(@"Data from BMOB fail!");
-        } else {
-            if (object) {
-                NSString *userName = [object objectForKey:@"user_name"];
-                NSLog(@"Data from BMOB: %@", userName);
-            }
-        }
-    }];
+    NSMutableArray *data = [ModelGroup groupWithNameOfContent:@"statuses.plist"];
+    
+    
+    NSMutableArray *data1 = [VOGroup groupWithNameOfContent:@"Secondhand.plist"];
+    NSLog(@"1111");
 }
 
 - (void)didReceiveMemoryWarning {
