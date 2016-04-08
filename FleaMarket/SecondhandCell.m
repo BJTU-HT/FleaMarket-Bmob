@@ -178,9 +178,21 @@
     _sexImageView.image = [UIImage imageNamed:model.sex];
     
     // 处理model中的pictureArray
-    _picture1.image = [UIImage imageNamed:model.pictureArray[0]];
-    _picture2.image = [UIImage imageNamed:model.pictureArray[1]];
-    _picture3.image = [UIImage imageNamed:model.pictureArray[2]];
+    if ([model.pictureArray count] >= 3) {
+        _picture1.image = [UIImage imageNamed:model.pictureArray[0]];
+        _picture2.image = [UIImage imageNamed:model.pictureArray[1]];
+        _picture3.image = [UIImage imageNamed:model.pictureArray[2]];
+    }
+    
+    if ([model.pictureArray count] == 2) {
+        _picture1.image = [UIImage imageNamed:model.pictureArray[0]];
+        _picture2.image = [UIImage imageNamed:model.pictureArray[1]];
+    }
+    
+    if ([model.pictureArray count] == 1) {
+        _picture1.image = [UIImage imageNamed:model.pictureArray[0]];
+    }
+
     
 }
 

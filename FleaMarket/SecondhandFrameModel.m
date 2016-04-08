@@ -123,7 +123,7 @@
         // cell间隔
         CGFloat cellPartX = 0;
         CGFloat cellPartY = CGRectGetMaxY(self.locationFrame) + margin;
-        CGFloat cellPartH = 5.0f;
+        CGFloat cellPartH = HTPartBar;
         self.cellPartFrame = CGRectMake(cellPartX, cellPartY, winSize.width, cellPartH);
         
         _cellHeight = CGRectGetMaxY(self.cellPartFrame);
