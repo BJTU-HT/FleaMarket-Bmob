@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITabBarControllerDelegate>
 
-
+@property (nonatomic, strong) UITabBarController *topTabBarController;
 @end
 

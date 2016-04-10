@@ -1,0 +1,19 @@
+//
+//  FleaMarket_PrefixHeader.pch
+//  FleaMarket
+//
+//  Created by Hou on 4/10/16.
+//  Copyright © 2016 H-T. All rights reserved.
+//
+
+#ifndef FleaMarket_PrefixHeader_pch
+#define FleaMarket_PrefixHeader_pch
+
+#define screenWidth self.view.bounds.size.width
+#define screenHeight self.view.bounds.size.height;
+#define navgationBarHeight self.navigationController.navigationBar.bounds.size.height
+#define statusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* FleaMarket_PrefixHeader_pch */
