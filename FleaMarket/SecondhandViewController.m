@@ -13,16 +13,16 @@
 #import "SecondhandVO.h"
 #import "Help.h"
 #import "MenuCell.h"
+#import "SecondhandTitleView.h"
+#import "SecondhandDetailViewController.h"
 
 static NSString *IDD = @"AA";
 static NSString *IDD_MENU = @"BB";
 
-@interface SecondhandViewController () <UITableViewDelegate, UITableViewDataSource, SecondhandBLDelegate>
+@interface SecondhandViewController () <UITableViewDelegate, UITableViewDataSource, SecondhandBLDelegate, SecondhandCategoryDelegate>
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableArray *frameArray;
-
-@property (nonatomic, strong) SecondhandMenuFrameModel *menuFrame;
 
 @property (nonatomic, weak) UITableView *tab;
 
@@ -44,50 +44,19 @@ static NSString *IDD_MENU = @"BB";
 
 - (void)setup
 {
-    
-    /*
-    // 创建菜单
+    // 设置navigationItem
     CGSize winSize = [UIScreen mainScreen].bounds.size;
-    UIScrollView *menu = [[UIScrollView alloc] init];
-    CGFloat labelW = winSize.width / 5.0f;
-    CGFloat labelH = labelW * 1.2f;
     CGFloat navigationBarH = self.navigationController.navigationBar.frame.size.height;
     CGFloat statusBarH = [UIApplication sharedApplication].statusBarFrame.size.height;
-    CGFloat menuH = labelH + navigationBarH + statusBarH;
-    menu.frame = CGRectMake(0, 0, winSize.width, menuH);
     
-    // 添加二手商品分类标签
-    for (int i = 0; i < 7; i++) {
-        CGFloat labelX = i * labelW;
-        CGFloat labelY = 0;
-        UIImageView *label = [[UIImageView alloc] init];
-        label.image = [UIImage imageNamed:[NSString stringWithFormat:@"label%d", i]];
-        //label.text = [NSString stringWithFormat:@"label%d", i];
-        label.frame = CGRectMake(labelX, labelY, labelW, labelH);
-        [menu addSubview:label];
-        label.tag = i;
-        label.userInteractionEnabled = YES;
-        
-        // 添加点击标签事件
-        [label addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelClick:)]];
-        
-        [self.labelArray addObject:label];
-    }
-    menu.contentSize = CGSizeMake(labelW * 7, 0);
-    menu.showsHorizontalScrollIndicator = NO;
-    menu.bounces = NO;
-     
-    [self.view addSubview:menu];
+    CGFloat titleViewW = winSize.width * 0.7f;
+    CGFloat titleViewH = navigationBarH * 0.8f;
+    SecondhandTitleView *secondhandTitleView = [[SecondhandTitleView alloc] initWithFrame:CGRectMake(0, 0, titleViewW, titleViewH)];
+    //secondhandTitleView.backgroundColor = [UIColor greenColor];
     
-    // 分隔条
-    CGFloat partBarX = 0;
-    CGFloat partBarY = CGRectGetMaxY(menu.frame);
-    CGFloat partBarH = HTPartBar;
-    CGFloat partBarW = self.view.frame.size.width;
-    UIView *partBar = [[UIView alloc] initWithFrame:CGRectMake(partBarX, partBarY, partBarW, partBarH)];
-    partBar.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:partBar];
-    */
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.titleView = secondhandTitleView;
+    
     
     // 创建tableview
     CGRect newBounds = (CGRect){{0,0}, self.view.bounds.size};
@@ -98,8 +67,8 @@ static NSString *IDD_MENU = @"BB";
     [self.view addSubview:vi];
     [vi registerClass:[SecondhandCell class] forCellReuseIdentifier:IDD];
     [vi registerClass:[MenuCell class] forCellReuseIdentifier:IDD_MENU];
-    //[vi registerClass:[MitchellCell class] forCellReuseIdentifier:IDD];
     self.tab = vi;
+    
     
     // 创建BL
     self.bl = [SecondhandBL new];
@@ -128,8 +97,7 @@ static NSString *IDD_MENU = @"BB";
     MenuCell *menuCell = [tableView dequeueReusableCellWithIdentifier:IDD_MENU];
     
     if (indexPath.section == 0) {
-        //menuCell.frameModel = self.menuFrame;
-        //menuCell.backgroundColor = [UIColor greenColor];
+        menuCell.delegate = self;
         return menuCell;
     } else {
         cell.model = [_dataArray objectAtIndex:indexPath.row];
@@ -160,18 +128,43 @@ static NSString *IDD_MENU = @"BB";
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([indexPath section] == 0) {
+        // 菜单section
+        NSLog(@"菜单section");
+    } else {
+        SecondhandDetailViewController *detailVC = [[SecondhandDetailViewController alloc] init];
+        detailVC.model = [_dataArray objectAtIndex:indexPath.row];
+        [self.navigationController pushViewController:detailVC animated:NO];
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //NSLog(@"上拉了 %f", scrollView.contentOffset.y);
+    /*
+    if ((int)scrollView.contentOffset.y <= 10) {
+        NSLog(@"拉到头了");
+        [self.tab.tableHeaderView setHidden:NO];
+    } else {
+        [self.tab.tableHeaderView setHidden:YES];
+    }
+     */
+}
+
 /*
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     CGFloat labelW = self.view.frame.size.width / 5.0f;
-    CGFloat labelH = labelW * 1.2f;
-    return labelH + HTPartBar;
+    CGFloat labelH = labelW * 0.2f;
+    return labelH;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     CGFloat labelW = self.view.frame.size.width / 5.0f;
-    CGFloat labelH = labelW * 1.2f;
+    CGFloat labelH = labelW * 0.2f;  // 图文标签的高度为1.2 * labelW, 文字标签高度为0.2 * labelW
     CGFloat menuX = 0;
     CGFloat menuY = 0;
     UIScrollView *menu = [[UIScrollView alloc] initWithFrame:CGRectMake(menuX, menuY, self.view.frame.size.width, labelH)];
@@ -181,8 +174,8 @@ static NSString *IDD_MENU = @"BB";
     for (int i = 0; i < 7; i++) {
         CGFloat labelX = i * labelW;
         CGFloat labelY = 0;
-        UIImageView *label = [[UIImageView alloc] init];
-        label.image = [UIImage imageNamed:[NSString stringWithFormat:@"label%d", i]];
+        UILabel *label = [[UILabel alloc] init];
+        label.text = @"xxx";
         label.frame = CGRectMake(labelX, labelY, labelW, labelH);
         [menu addSubview:label];
         label.tag = i;
@@ -210,7 +203,7 @@ static NSString *IDD_MENU = @"BB";
     UIView *headerView = [[UIView alloc] init];
     headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, labelH + partBarH);
     [headerView addSubview:menu];
-    [headerView addSubview:partBar];
+    //[headerView addSubview:partBar];
     
     return headerView;
 }
@@ -223,9 +216,16 @@ static NSString *IDD_MENU = @"BB";
 {
     _dataArray = list;
     _frameArray = [SecondhandFrameModel frameModelWithArray:_dataArray];
-    //_menuFrame = [[SecondhandMenuFrameModel alloc] init];
     
     [self.tab reloadData];
+}
+
+#pragma mark --------------------SecondhandCategoryDelegate----------------
+
+// 当用户点击菜单标签时，更新tableview数据
+- (void)chooseCategory:(NSInteger)category
+{
+    NSLog(@"用户选择了 %ld 类二手产品", category);
 }
 
 #pragma mark --------------------Initialize------------------------------

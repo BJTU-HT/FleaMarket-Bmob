@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SecondhandMenuFrameModel.h"
+
+@protocol SecondhandCategoryDelegate
+
+@optional
+
+- (void)chooseCategory:(NSInteger)category;
+
+@end
 
 @interface MenuCell : UITableViewCell
 
-//@property (nonatomic, strong) SecondhandMenuFrameModel *frameModel;
+@property (weak, nonatomic) id <SecondhandCategoryDelegate> delegate;
 
 @end

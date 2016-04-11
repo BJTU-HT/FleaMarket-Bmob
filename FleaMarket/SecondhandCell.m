@@ -17,30 +17,24 @@
 @property (nonatomic, weak) UILabel *nameLabel;
 // 性别
 @property (nonatomic, weak) UIImageView *sexImageView;
-
 // 价格
 @property (nonatomic, weak) UILabel *priceLabel;
 // 描述
 @property (nonatomic, weak) UILabel *descriptionLabel;
 // 配图
 @property (nonatomic, weak) UIView *pictureImageView;
-
 // 配图
 @property (nonatomic, weak) UIImageView *picture1;
 @property (nonatomic, weak) UIImageView *picture2;
 @property (nonatomic, weak) UIImageView *picture3;
-
 // 学校
 @property (nonatomic, weak) UILabel *schoolLabel;
-
 //地址
 @property (nonatomic, weak) UILabel *locationLabel;
 // 发布时间
 @property (nonatomic, weak) UILabel *publishTimeLabel;
-
 // 分隔线
 @property (nonatomic, weak) UIView *partLine;
-
 // cell间隔
 @property (nonatomic, weak) UIView *cellPart;
 

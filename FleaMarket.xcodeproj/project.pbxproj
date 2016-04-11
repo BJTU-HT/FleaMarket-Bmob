@@ -19,7 +19,6 @@
 		E93EDEBB1CACD08F00252EF0 /* SecondhandDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = E93EDEBA1CACD08F00252EF0 /* SecondhandDAO.m */; };
 		E93EDEBE1CAD0FC300252EF0 /* SecondhandBL.m in Sources */ = {isa = PBXBuildFile; fileRef = E93EDEBD1CAD0FC300252EF0 /* SecondhandBL.m */; };
 		E952B6761CB5FD730075B6ED /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E952B6751CB5FD730075B6ED /* MenuCell.m */; };
-		E952B6791CB6069E0075B6ED /* SecondhandMenuFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E952B6781CB6069E0075B6ED /* SecondhandMenuFrameModel.m */; };
 		E9536C9D1CA7FFA20055720C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536C9C1CA7FFA20055720C /* main.m */; };
 		E9536CA01CA7FFA20055720C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536C9F1CA7FFA20055720C /* AppDelegate.m */; };
 		E9536CA31CA7FFA20055720C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536CA21CA7FFA20055720C /* ViewController.m */; };
@@ -31,6 +30,7 @@
 		E9536CC41CA7FFA20055720C /* FleaMarketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536CC31CA7FFA20055720C /* FleaMarketUITests.m */; };
 		E95589DC1CB3FDA3005DAB2C /* macpro1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E95589DB1CB3FDA3005DAB2C /* macpro1.jpg */; };
 		E95589DE1CB3FDAD005DAB2C /* macpro2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E95589DD1CB3FDAD005DAB2C /* macpro2.jpg */; };
+		E9579AED1CB9F045009E525A /* SecondhandDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9579AEC1CB9F045009E525A /* SecondhandDetailViewController.m */; };
 		E98346071CB0AE4B00C84150 /* Secondhand.plist in Resources */ = {isa = PBXBuildFile; fileRef = E98346061CB0AE4B00C84150 /* Secondhand.plist */; };
 		E983460A1CB0B12700C84150 /* VOGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E98346091CB0B12700C84150 /* VOGroup.m */; };
 		E983460D1CB0C2F200C84150 /* ModelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E983460C1CB0C2F200C84150 /* ModelGroup.m */; };
@@ -42,6 +42,7 @@
 		E9C125381CA91D38005DE17C /* SecondhandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C125371CA91D38005DE17C /* SecondhandViewController.m */; };
 		E9C1253C1CA929B0005DE17C /* SecondhandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C1253B1CA929B0005DE17C /* SecondhandCell.m */; };
 		E9C125471CA9684C005DE17C /* SecondhandFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C125461CA9684C005DE17C /* SecondhandFrameModel.m */; };
+		E9C20A661CB93A890067E494 /* SecondhandTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C20A651CB93A890067E494 /* SecondhandTitleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +87,6 @@
 		E93EDEBF1CAD0FDF00252EF0 /* SecondhandBLDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondhandBLDelegate.h; sourceTree = "<group>"; };
 		E952B6741CB5FD730075B6ED /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
 		E952B6751CB5FD730075B6ED /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
-		E952B6771CB6069E0075B6ED /* SecondhandMenuFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondhandMenuFrameModel.h; sourceTree = "<group>"; };
-		E952B6781CB6069E0075B6ED /* SecondhandMenuFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandMenuFrameModel.m; sourceTree = "<group>"; };
 		E9536C981CA7FFA20055720C /* FleaMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FleaMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9536C9C1CA7FFA20055720C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9536C9E1CA7FFA20055720C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +106,8 @@
 		E9536CC51CA7FFA20055720C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E95589DB1CB3FDA3005DAB2C /* macpro1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macpro1.jpg; sourceTree = "<group>"; };
 		E95589DD1CB3FDAD005DAB2C /* macpro2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macpro2.jpg; sourceTree = "<group>"; };
+		E9579AEB1CB9F045009E525A /* SecondhandDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondhandDetailViewController.h; sourceTree = "<group>"; };
+		E9579AEC1CB9F045009E525A /* SecondhandDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandDetailViewController.m; sourceTree = "<group>"; };
 		E98346061CB0AE4B00C84150 /* Secondhand.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secondhand.plist; path = ../Secondhand.plist; sourceTree = "<group>"; };
 		E98346081CB0B12700C84150 /* VOGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOGroup.h; sourceTree = "<group>"; };
 		E98346091CB0B12700C84150 /* VOGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOGroup.m; sourceTree = "<group>"; };
@@ -127,6 +128,8 @@
 		E9C1253B1CA929B0005DE17C /* SecondhandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandCell.m; sourceTree = "<group>"; };
 		E9C125451CA9684C005DE17C /* SecondhandFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondhandFrameModel.h; sourceTree = "<group>"; };
 		E9C125461CA9684C005DE17C /* SecondhandFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandFrameModel.m; sourceTree = "<group>"; };
+		E9C20A641CB93A890067E494 /* SecondhandTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondhandTitleView.h; sourceTree = "<group>"; };
+		E9C20A651CB93A890067E494 /* SecondhandTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandTitleView.m; sourceTree = "<group>"; };
 		FFCE24394E3098B6A18BDA9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,14 +322,15 @@
 		E9C125351CA91D01005DE17C /* Secondhand */ = {
 			isa = PBXGroup;
 			children = (
+				E9C20A631CB93A600067E494 /* TitleView */,
 				E93BC4201CB738BA00B42C4A /* MenuButton */,
 				E9C125391CA9297B005DE17C /* Cell */,
 				E9C125451CA9684C005DE17C /* SecondhandFrameModel.h */,
 				E9C125461CA9684C005DE17C /* SecondhandFrameModel.m */,
 				E9C125361CA91D38005DE17C /* SecondhandViewController.h */,
 				E9C125371CA91D38005DE17C /* SecondhandViewController.m */,
-				E952B6771CB6069E0075B6ED /* SecondhandMenuFrameModel.h */,
-				E952B6781CB6069E0075B6ED /* SecondhandMenuFrameModel.m */,
+				E9579AEB1CB9F045009E525A /* SecondhandDetailViewController.h */,
+				E9579AEC1CB9F045009E525A /* SecondhandDetailViewController.m */,
 			);
 			name = Secondhand;
 			sourceTree = "<group>";
@@ -354,6 +358,15 @@
 				E98346091CB0B12700C84150 /* VOGroup.m */,
 			);
 			name = Secondhand;
+			sourceTree = "<group>";
+		};
+		E9C20A631CB93A600067E494 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				E9C20A641CB93A890067E494 /* SecondhandTitleView.h */,
+				E9C20A651CB93A890067E494 /* SecondhandTitleView.m */,
+			);
+			name = TitleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9579AED1CB9F045009E525A /* SecondhandDetailViewController.m in Sources */,
 				E9C1253C1CA929B0005DE17C /* SecondhandCell.m in Sources */,
 				E9536CA31CA7FFA20055720C /* ViewController.m in Sources */,
 				E93EDEAF1CACC3C600252EF0 /* SecondhandVO.m in Sources */,
@@ -559,8 +573,8 @@
 				E93BC4231CB73A3000B42C4A /* MenuButton.m in Sources */,
 				E983460A1CB0B12700C84150 /* VOGroup.m in Sources */,
 				E9536C9D1CA7FFA20055720C /* main.m in Sources */,
-				E952B6791CB6069E0075B6ED /* SecondhandMenuFrameModel.m in Sources */,
 				E952B6761CB5FD730075B6ED /* MenuCell.m in Sources */,
+				E9C20A661CB93A890067E494 /* SecondhandTitleView.m in Sources */,
 				E9B5C57B1CB3531C000D73BD /* MitchellCell.m in Sources */,
 				E93EDEBB1CACD08F00252EF0 /* SecondhandDAO.m in Sources */,
 				E98346121CB0C3ED00C84150 /* MitchellModel.m in Sources */,
