@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SecondhandViewController.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,15 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    SecondhandViewController *secondhandVC = [[SecondhandViewController alloc] init];
-    
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:secondhandVC];
-    
-    self.window.rootViewController = navController;
+    ViewController *rootView = [[ViewController alloc] init];
+    self.window.rootViewController = rootView;
     
     [self.window makeKeyAndVisible];
     

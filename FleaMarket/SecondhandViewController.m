@@ -38,9 +38,22 @@ static NSString *IDD_MENU = @"BB";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"二手市场";
     // Do any additional setup after loading the view.
     [self setup];
 }
+
+//暂时没有找到你在哪个位置隐藏了导航栏，在此处添加导航栏显示 2016-04-10 18：54 by houym
+#pragma 添加导航栏显示
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+}
+#pragma 添加导航栏显示end 当前VC退出后隐藏导航栏
 
 - (void)setup
 {
