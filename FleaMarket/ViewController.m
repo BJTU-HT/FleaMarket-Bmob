@@ -25,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /*
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.delegate = self;
     
@@ -57,6 +59,8 @@
     [self.view addSubview:tabBarController.view];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view, typically from a nib.
+     
+     */
 }
 
 - (void)didReceiveMemoryWarning {

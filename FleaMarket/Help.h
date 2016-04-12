@@ -10,6 +10,7 @@
 #define Help_h
 
 #define HTNameFont [UIFont systemFontOfSize:12]
+#define HTTextFontLess [UIFont systemFontOfSize:10]
 #define HTTextFont [UIFont systemFontOfSize:12]
 #define HTPartBar 5.0
 

@@ -15,6 +15,7 @@
 #import "MenuCell.h"
 #import "SecondhandTitleView.h"
 #import "SecondhandDetailViewController.h"
+#import "TonglmTestViewController.h"
 
 static NSString *IDD = @"AA";
 static NSString *IDD_MENU = @"BB";
@@ -65,7 +66,6 @@ static NSString *IDD_MENU = @"BB";
     CGFloat titleViewW = winSize.width * 0.7f;
     CGFloat titleViewH = navigationBarH * 0.8f;
     SecondhandTitleView *secondhandTitleView = [[SecondhandTitleView alloc] initWithFrame:CGRectMake(0, 0, titleViewW, titleViewH)];
-    //secondhandTitleView.backgroundColor = [UIColor greenColor];
     
     UINavigationItem *navItem = self.navigationItem;
     navItem.titleView = secondhandTitleView;
@@ -149,7 +149,8 @@ static NSString *IDD_MENU = @"BB";
     } else {
         SecondhandDetailViewController *detailVC = [[SecondhandDetailViewController alloc] init];
         detailVC.model = [_dataArray objectAtIndex:indexPath.row];
-        [self.navigationController pushViewController:detailVC animated:NO];
+        //[self.navigationController pushViewController:detailVC animated:NO];
+        [self presentViewController:detailVC animated:YES completion:nil];
     }
 }
 
