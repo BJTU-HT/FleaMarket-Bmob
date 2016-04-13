@@ -259,7 +259,6 @@
     CGFloat skimIconX = margin;
     CGFloat skimIconY = CGRectGetMaxY(skimTimesLabel.frame) + margin / 2.0f;
     CGFloat skimIconW = winSize.width - 2 * margin;
-    CGFloat skimIconH = iconWH;
     UIView *skimIcons = [[UIView alloc] initWithFrame:CGRectMake(skimIconX, skimIconY, skimIconW, iconWH)];
     skimIcons.backgroundColor = [UIColor grayColor];
     [self.view addSubview:skimIcons];

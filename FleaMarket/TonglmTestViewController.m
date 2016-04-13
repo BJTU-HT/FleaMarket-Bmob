@@ -12,6 +12,7 @@
 #import "UserDAO.h"
 #import "ModelGroup.h"
 #import "VOGroup.h"
+#import "SecondhandMessageDAO.h"
 
 @interface TonglmTestViewController ()
 
@@ -25,11 +26,11 @@
     //SecondhandDAO *sdao = [SecondhandDAO sharedManager];
     //[sdao findAll];
     
-    NSMutableArray *data = [ModelGroup groupWithNameOfContent:@"statuses.plist"];
+    SecondhandMessageDAO *dao = [SecondhandMessageDAO sharedManager];
+    
+    [dao findSecondhandMessage:@"10001"];
     
     
-    NSMutableArray *data1 = [VOGroup groupWithNameOfContent:@"Secondhand.plist"];
-    NSLog(@"1111");
 }
 
 - (void)didReceiveMemoryWarning {
