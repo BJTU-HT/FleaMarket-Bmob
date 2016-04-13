@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67EEF4FDF72B64D345936E2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C043454564A2788C3BF1ADE /* libPods.a */; };
+		9651A0651CBE3A2500DE6CF2 /* myVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651A0641CBE3A2500DE6CF2 /* myVC.m */; };
+		9651A0681CBE3A6E00DE6CF2 /* publishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9651A0671CBE3A6E00DE6CF2 /* publishVC.m */; };
 		9677AEA91CBB4BD100BCD6EF /* logInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677AEA81CBB4BD100BCD6EF /* logInViewController.m */; };
 		9677AEAC1CBB4BE300BCD6EF /* personalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677AEAB1CBB4BE300BCD6EF /* personalPageViewController.m */; };
 		9677AEAF1CBB4BFC00BCD6EF /* registViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9677AEAE1CBB4BFC00BCD6EF /* registViewController.m */; };
@@ -22,6 +24,7 @@
 		9677AECC1CBB559A00BCD6EF /* QQ.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9677AECB1CBB559A00BCD6EF /* QQ.JPG */; };
 		9677AECE1CBB55A000BCD6EF /* renren.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9677AECD1CBB55A000BCD6EF /* renren.JPG */; };
 		967E578C1CBBC51800726F03 /* searchFromBmob.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E578B1CBBC51800726F03 /* searchFromBmob.m */; };
+		968C1BDC1CBE3E7500FA62F7 /* firstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 968C1BDB1CBE3E7500FA62F7 /* firstPageVC.m */; };
 		96CE42CC1CBDD5ED002093B9 /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96CE42CB1CBDD5ED002093B9 /* pic1.jpg */; };
 		96FB6EF31CBA615700452C35 /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6EE01CBA615700452C35 /* 001.png */; };
 		96FB6EF41CBA615700452C35 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6EE11CBA615700452C35 /* 1@2x.png */; };
@@ -78,6 +81,7 @@
 		96FB6F491CBA61CD00452C35 /* titBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6F481CBA61CD00452C35 /* titBar@2x.png */; };
 		96FB6F511CBA620000452C35 /* headImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6F501CBA620000452C35 /* headImage@2x.png */; };
 		96FB6F5A1CBA625E00452C35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6F591CBA625E00452C35 /* ViewController.m */; };
+		96FFD3191CBE39F8001F544D /* chatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FFD3181CBE39F8001F544D /* chatVC.m */; };
 		E91976931CB3953C0069D6E8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E91976921CB3953C0069D6E8 /* Default.png */; };
 		E91976961CB3B31B0069D6E8 /* phone3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E91976951CB3B31B0069D6E8 /* phone3.jpg */; };
 		E91976981CB3B3210069D6E8 /* phone2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E91976971CB3B3210069D6E8 /* phone2.jpg */; };
@@ -100,7 +104,6 @@
 		E9536CC41CA7FFA20055720C /* FleaMarketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9536CC31CA7FFA20055720C /* FleaMarketUITests.m */; };
 		E95589DC1CB3FDA3005DAB2C /* macpro1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E95589DB1CB3FDA3005DAB2C /* macpro1.jpg */; };
 		E95589DE1CB3FDAD005DAB2C /* macpro2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E95589DD1CB3FDAD005DAB2C /* macpro2.jpg */; };
-		E9579AED1CB9F045009E525A /* SecondhandDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9579AEC1CB9F045009E525A /* SecondhandDetailViewController.m */; };
 		E98346071CB0AE4B00C84150 /* Secondhand.plist in Resources */ = {isa = PBXBuildFile; fileRef = E98346061CB0AE4B00C84150 /* Secondhand.plist */; };
 		E983460A1CB0B12700C84150 /* VOGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E98346091CB0B12700C84150 /* VOGroup.m */; };
 		E983460D1CB0C2F200C84150 /* ModelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E983460C1CB0C2F200C84150 /* ModelGroup.m */; };
@@ -113,13 +116,11 @@
 		E9C125381CA91D38005DE17C /* SecondhandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C125371CA91D38005DE17C /* SecondhandViewController.m */; };
 		E9C1253C1CA929B0005DE17C /* SecondhandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C1253B1CA929B0005DE17C /* SecondhandCell.m */; };
 		E9C125471CA9684C005DE17C /* SecondhandFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C125461CA9684C005DE17C /* SecondhandFrameModel.m */; };
-		E9C20A661CB93A890067E494 /* SecondhandTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C20A651CB93A890067E494 /* SecondhandTitleView.m */; };
 		E9D479321CBE177B0027E7E4 /* SecondhandMessageVOGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D479311CBE177B0027E7E4 /* SecondhandMessageVOGroup.m */; };
 		E9D479341CBE1EB90027E7E4 /* SecondhandMessage.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9D479331CBE1EB90027E7E4 /* SecondhandMessage.plist */; };
 		E9D479391CBE22FA0027E7E4 /* SecondhandMessageBL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D479381CBE22FA0027E7E4 /* SecondhandMessageBL.m */; };
 		E9D479431CBE36030027E7E4 /* chatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4793C1CBE36030027E7E4 /* chatVC.m */; };
 		E9D479441CBE36030027E7E4 /* firstPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D4793E1CBE36030027E7E4 /* firstPageVC.m */; };
-		E9D479451CBE36030027E7E4 /* myVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D479401CBE36030027E7E4 /* myVC.m */; };
 		E9D479461CBE36030027E7E4 /* publishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D479421CBE36030027E7E4 /* publishVC.m */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,10 @@
 
 /* Begin PBXFileReference section */
 		4B9FF095CDC62FF9BCCF72DB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9651A0631CBE3A2500DE6CF2 /* myVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myVC.h; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/myVC.h"; sourceTree = "<group>"; };
+		9651A0641CBE3A2500DE6CF2 /* myVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myVC.m; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/myVC.m"; sourceTree = "<group>"; };
+		9651A0661CBE3A6E00DE6CF2 /* publishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = publishVC.h; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/publishVC.h"; sourceTree = "<group>"; };
+		9651A0671CBE3A6E00DE6CF2 /* publishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = publishVC.m; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/publishVC.m"; sourceTree = "<group>"; };
 		9677AEA71CBB4BD100BCD6EF /* logInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logInViewController.h; sourceTree = "<group>"; };
 		9677AEA81CBB4BD100BCD6EF /* logInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logInViewController.m; sourceTree = "<group>"; };
 		9677AEAA1CBB4BE300BCD6EF /* personalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalPageViewController.h; sourceTree = "<group>"; };
@@ -167,6 +172,8 @@
 		9677AECD1CBB55A000BCD6EF /* renren.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = renren.JPG; sourceTree = "<group>"; };
 		967E578A1CBBC51800726F03 /* searchFromBmob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchFromBmob.h; sourceTree = "<group>"; };
 		967E578B1CBBC51800726F03 /* searchFromBmob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchFromBmob.m; sourceTree = "<group>"; };
+		968C1BDA1CBE3E7500FA62F7 /* firstPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstPageVC.h; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/firstPageVC.h"; sourceTree = "<group>"; };
+		968C1BDB1CBE3E7500FA62F7 /* firstPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstPageVC.m; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/firstPageVC.m"; sourceTree = "<group>"; };
 		96CE42CB1CBDD5ED002093B9 /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic1.jpg; path = "../../../Project_Backup/2016-04-11-09-04-backup/TestDemo1/TestDemo1/pic1.jpg"; sourceTree = "<group>"; };
 		96FB6EE01CBA615700452C35 /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
 		96FB6EE11CBA615700452C35 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
@@ -225,6 +232,8 @@
 		96FB6F581CBA625E00452C35 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		96FB6F591CBA625E00452C35 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		96FB6F5B1CBA661C00452C35 /* FleaMarket_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FleaMarket_PrefixHeader.pch; sourceTree = "<group>"; };
+		96FFD3171CBE39F8001F544D /* chatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chatVC.h; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/chatVC.h"; sourceTree = "<group>"; };
+		96FFD3181CBE39F8001F544D /* chatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = chatVC.m; path = "../../2016-04-13-backup/FleaMarket-Bmob/FleaMarket/chatVC.m"; sourceTree = "<group>"; };
 		9C043454564A2788C3BF1ADE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91976921CB3953C0069D6E8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E91976941CB398040069D6E8 /* Help.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
@@ -297,16 +306,9 @@
 		E9D479301CBE177A0027E7E4 /* SecondhandMessageVOGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondhandMessageVOGroup.h; sourceTree = "<group>"; };
 		E9D479311CBE177B0027E7E4 /* SecondhandMessageVOGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandMessageVOGroup.m; sourceTree = "<group>"; };
 		E9D479331CBE1EB90027E7E4 /* SecondhandMessage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SecondhandMessage.plist; sourceTree = "<group>"; };
-		E9D479371CBE22FA0027E7E4 /* SecondhandMessageBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondhandMessageBL.h; sourceTree = "<group>"; };
 		E9D479381CBE22FA0027E7E4 /* SecondhandMessageBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondhandMessageBL.m; sourceTree = "<group>"; };
-		E9D4793A1CBE23910027E7E4 /* SecondhandMessageBLDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondhandMessageBLDelegate.h; sourceTree = "<group>"; };
-		E9D4793B1CBE36030027E7E4 /* chatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatVC.h; sourceTree = "<group>"; };
 		E9D4793C1CBE36030027E7E4 /* chatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatVC.m; sourceTree = "<group>"; };
-		E9D4793D1CBE36030027E7E4 /* firstPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstPageVC.h; sourceTree = "<group>"; };
 		E9D4793E1CBE36030027E7E4 /* firstPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstPageVC.m; sourceTree = "<group>"; };
-		E9D4793F1CBE36030027E7E4 /* myVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myVC.h; sourceTree = "<group>"; };
-		E9D479401CBE36030027E7E4 /* myVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myVC.m; sourceTree = "<group>"; };
-		E9D479411CBE36030027E7E4 /* publishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publishVC.h; sourceTree = "<group>"; };
 		E9D479421CBE36030027E7E4 /* publishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = publishVC.m; sourceTree = "<group>"; };
 		FFCE24394E3098B6A18BDA9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -348,8 +350,8 @@
 		9677AEA21CBB44C600BCD6EF /* myModuleVC */ = {
 			isa = PBXGroup;
 			children = (
-				96FB6F521CBA621400452C35 /* myVC.h */,
-				96FB6F531CBA621400452C35 /* myVC.m */,
+				9651A0631CBE3A2500DE6CF2 /* myVC.h */,
+				9651A0641CBE3A2500DE6CF2 /* myVC.m */,
 				9677AEA71CBB4BD100BCD6EF /* logInViewController.h */,
 				9677AEA81CBB4BD100BCD6EF /* logInViewController.m */,
 				9677AEAA1CBB4BE300BCD6EF /* personalPageViewController.h */,
@@ -371,8 +373,8 @@
 		9677AEA31CBB44DF00BCD6EF /* firstPageVC */ = {
 			isa = PBXGroup;
 			children = (
-				96FB6F4D1CBA61F200452C35 /* firstPageVC.h */,
-				96FB6F4E1CBA61F200452C35 /* firstPageVC.m */,
+				968C1BDA1CBE3E7500FA62F7 /* firstPageVC.h */,
+				968C1BDB1CBE3E7500FA62F7 /* firstPageVC.m */,
 			);
 			name = firstPageVC;
 			sourceTree = "<group>";
@@ -380,8 +382,8 @@
 		9677AEA41CBB44FC00BCD6EF /* chatVC */ = {
 			isa = PBXGroup;
 			children = (
-				96FB6F4A1CBA61E800452C35 /* chatVC.h */,
-				96FB6F4B1CBA61E800452C35 /* chatVC.m */,
+				96FFD3171CBE39F8001F544D /* chatVC.h */,
+				96FFD3181CBE39F8001F544D /* chatVC.m */,
 			);
 			name = chatVC;
 			sourceTree = "<group>";
@@ -389,8 +391,8 @@
 		9677AEA51CBB451100BCD6EF /* publishVC */ = {
 			isa = PBXGroup;
 			children = (
-				96FB6F551CBA621D00452C35 /* publishVC.h */,
-				96FB6F561CBA621D00452C35 /* publishVC.m */,
+				9651A0661CBE3A6E00DE6CF2 /* publishVC.h */,
+				9651A0671CBE3A6E00DE6CF2 /* publishVC.m */,
 			);
 			name = publishVC;
 			sourceTree = "<group>";
@@ -716,26 +718,6 @@
 			name = TitleView;
 			sourceTree = "<group>";
 		};
-		E9D479351CBE22B80027E7E4 /* Secondhand */ = {
-			isa = PBXGroup;
-			children = (
-				E93EDEBC1CAD0FC300252EF0 /* SecondhandBL.h */,
-				E93EDEBD1CAD0FC300252EF0 /* SecondhandBL.m */,
-				E93EDEBF1CAD0FDF00252EF0 /* SecondhandBLDelegate.h */,
-			);
-			name = Secondhand;
-			sourceTree = "<group>";
-		};
-		E9D479361CBE22CF0027E7E4 /* SecondhandMessage */ = {
-			isa = PBXGroup;
-			children = (
-				E9D479371CBE22FA0027E7E4 /* SecondhandMessageBL.h */,
-				E9D479381CBE22FA0027E7E4 /* SecondhandMessageBL.m */,
-				E9D4793A1CBE23910027E7E4 /* SecondhandMessageBLDelegate.h */,
-			);
-			name = SecondhandMessage;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -985,6 +967,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9651A0651CBE3A2500DE6CF2 /* myVC.m in Sources */,
 				9677AECA1CBB516500BCD6EF /* pinyin.m in Sources */,
 				E9C1253C1CA929B0005DE17C /* SecondhandCell.m in Sources */,
 				E93EDEAF1CACC3C600252EF0 /* SecondhandVO.m in Sources */,
@@ -1007,13 +990,14 @@
 				9677AEB21CBB4C0800BCD6EF /* setUpViewController.m in Sources */,
 				9677AEAF1CBB4BFC00BCD6EF /* registViewController.m in Sources */,
 				E9536C9D1CA7FFA20055720C /* main.m in Sources */,
+				96FFD3191CBE39F8001F544D /* chatVC.m in Sources */,
 				E952B6761CB5FD730075B6ED /* MenuCell.m in Sources */,
 				9677AEC31CBB505300BCD6EF /* cityListVC.m in Sources */,
 				9677AEAC1CBB4BE300BCD6EF /* personalPageViewController.m in Sources */,
 				9677AEC01CBB4FD800BCD6EF /* ModifyPersonalPageVC.m in Sources */,
-				96FB6F571CBA621D00452C35 /* publishVC.m in Sources */,
-				96FB6F4C1CBA61E800452C35 /* chatVC.m in Sources */,
+				9651A0681CBE3A6E00DE6CF2 /* publishVC.m in Sources */,
 				E9B5C57B1CB3531C000D73BD /* MitchellCell.m in Sources */,
+				968C1BDC1CBE3E7500FA62F7 /* firstPageVC.m in Sources */,
 				E93EDEBB1CACD08F00252EF0 /* SecondhandDAO.m in Sources */,
 				E98346121CB0C3ED00C84150 /* MitchellModel.m in Sources */,
 				967E578C1CBBC51800726F03 /* searchFromBmob.m in Sources */,
