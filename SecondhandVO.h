@@ -26,8 +26,6 @@
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSString *publishTime;
 
-
-
 // 从plist读取数据
 + (instancetype)modelWithDict:(NSDictionary *)dict;
 

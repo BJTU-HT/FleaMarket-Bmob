@@ -13,16 +13,17 @@
 #import "SecondhandVO.h"
 #import "Help.h"
 #import "MenuCell.h"
+#import "SecondhandTitleView.h"
+#import "SecondhandDetailViewController.h"
+#import "TonglmTestViewController.h"
 
 static NSString *IDD = @"AA";
 static NSString *IDD_MENU = @"BB";
 
-@interface SecondhandViewController () <UITableViewDelegate, UITableViewDataSource, SecondhandBLDelegate>
+@interface SecondhandViewController () <UITableViewDelegate, UITableViewDataSource, SecondhandBLDelegate, SecondhandCategoryDelegate>
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableArray *frameArray;
-
-@property (nonatomic, strong) SecondhandMenuFrameModel *menuFrame;
 
 @property (nonatomic, weak) UITableView *tab;
 
@@ -66,8 +67,8 @@ static NSString *IDD_MENU = @"BB";
     [self.view addSubview:vi];
     [vi registerClass:[SecondhandCell class] forCellReuseIdentifier:IDD];
     [vi registerClass:[MenuCell class] forCellReuseIdentifier:IDD_MENU];
-    //[vi registerClass:[MitchellCell class] forCellReuseIdentifier:IDD];
     self.tab = vi;
+    
     
     // 创建BL
     self.bl = [SecondhandBL new];
@@ -96,8 +97,7 @@ static NSString *IDD_MENU = @"BB";
     MenuCell *menuCell = [tableView dequeueReusableCellWithIdentifier:IDD_MENU];
     
     if (indexPath.section == 0) {
-        //menuCell.frameModel = self.menuFrame;
-        //menuCell.backgroundColor = [UIColor greenColor];
+        menuCell.delegate = self;
         return menuCell;
     } else {
         cell.model = [_dataArray objectAtIndex:indexPath.row];
@@ -135,9 +135,16 @@ static NSString *IDD_MENU = @"BB";
 {
     _dataArray = list;
     _frameArray = [SecondhandFrameModel frameModelWithArray:_dataArray];
-    //_menuFrame = [[SecondhandMenuFrameModel alloc] init];
     
     [self.tab reloadData];
+}
+
+#pragma mark --------------------SecondhandCategoryDelegate----------------
+
+// 当用户点击菜单标签时，更新tableview数据
+- (void)chooseCategory:(NSInteger)category
+{
+    NSLog(@"用户选择了 %ld 类二手产品", category);
 }
 
 #pragma mark --------------------Initialize------------------------------

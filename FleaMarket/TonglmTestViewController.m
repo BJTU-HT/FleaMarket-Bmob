@@ -12,6 +12,7 @@
 #import "UserDAO.h"
 #import "ModelGroup.h"
 #import "VOGroup.h"
+#import "SecondhandMessageDAO.h"
 
 @interface TonglmTestViewController ()
 

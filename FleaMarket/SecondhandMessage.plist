@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>messageID</key>
+		<string>10001</string>
+		<key>productID</key>
+		<string>10001</string>
+		<key>userID</key>
+		<string>10001</string>
+		<key>userName</key>
+		<string>仝磊鸣</string>
+		<key>content</key>
+		<string>这个东西太好了</string>
+		<key>publishTime</key>
+		<string>2016-04-13</string>
+		<key>parentMessageID</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>messageID</key>
+		<string>10002</string>
+		<key>productID</key>
+		<string>10001</string>
+		<key>userID</key>
+		<string>10002</string>
+		<key>userName</key>
+		<string>候一名</string>
+		<key>content</key>
+		<string>太扯了</string>
+		<key>publishTime</key>
+		<string>2016-04-13</string>
+		<key>parentMessageID</key>
+		<string>10001</string>
+	</dict>
+</array>
+</plist>
