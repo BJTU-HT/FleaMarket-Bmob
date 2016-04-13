@@ -12,7 +12,7 @@
 
 @optional
 
-- (void)findAllFinished:(NSMutableArray *)list;
-- (void)findAllFailed:(NSError *)error;
+-(void)findAllFinished:(NSMutableArray *)list;
+-(void)findAllFailed:(NSError *)error;
 
 @end

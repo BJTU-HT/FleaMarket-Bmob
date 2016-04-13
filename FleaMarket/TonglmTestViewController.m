@@ -24,11 +24,11 @@
     // Do any additional setup after loading the view.
     //SecondhandDAO *sdao = [SecondhandDAO sharedManager];
     //[sdao findAll];
+    //    NSMutableArray *data = [ModelGroup groupWithNameOfContent:@"statuses.plist"];
     
-    NSMutableArray *data = [ModelGroup groupWithNameOfContent:@"statuses.plist"];
     
-    
-    NSMutableArray *data1 = [VOGroup groupWithNameOfContent:@"Secondhand.plist"];
+    //    NSMutableArray *data1 = [VOGroup groupWithNameOfContent:@"Secondhand.plist"];
+
     NSLog(@"1111");
 }
 

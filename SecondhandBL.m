@@ -34,7 +34,7 @@
 }
 
 #pragma --mark ----------SecondhandDAODelegate 委托方法--------------
-- (void)findAllFinished:(NSMutableArray *)list
+-(void)findAllFinished:(NSMutableArray *)list
 {
     [self.delegate findAllSecondhandFinished:list];
 }

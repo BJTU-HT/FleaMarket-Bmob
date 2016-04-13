@@ -9,7 +9,7 @@
 #import "MenuCell.h"
 #import "MenuButton.h"
 
-@interface MenuCell ()
+@interface MenuCell()
 
 // 整体scrollview
 @property (nonatomic, weak) UIScrollView *menu;

@@ -10,7 +10,7 @@
 
 @implementation SecondhandVO
 
-+ (instancetype)modelWithDict:(NSDictionary *)dict
++(instancetype)modelWithDict:(NSDictionary *)dict
 {
     SecondhandVO *vo = [[SecondhandVO alloc] init];
     [vo setValuesForKeysWithDictionary:dict];

@@ -57,50 +57,6 @@ static NSString *IDD_MENU = @"BB";
 
 - (void)setup
 {
-    
-    /*
-    // 创建菜单
-    CGSize winSize = [UIScreen mainScreen].bounds.size;
-    UIScrollView *menu = [[UIScrollView alloc] init];
-    CGFloat labelW = winSize.width / 5.0f;
-    CGFloat labelH = labelW * 1.2f;
-    CGFloat navigationBarH = self.navigationController.navigationBar.frame.size.height;
-    CGFloat statusBarH = [UIApplication sharedApplication].statusBarFrame.size.height;
-    CGFloat menuH = labelH + navigationBarH + statusBarH;
-    menu.frame = CGRectMake(0, 0, winSize.width, menuH);
-    
-    // 添加二手商品分类标签
-    for (int i = 0; i < 7; i++) {
-        CGFloat labelX = i * labelW;
-        CGFloat labelY = 0;
-        UIImageView *label = [[UIImageView alloc] init];
-        label.image = [UIImage imageNamed:[NSString stringWithFormat:@"label%d", i]];
-        //label.text = [NSString stringWithFormat:@"label%d", i];
-        label.frame = CGRectMake(labelX, labelY, labelW, labelH);
-        [menu addSubview:label];
-        label.tag = i;
-        label.userInteractionEnabled = YES;
-        
-        // 添加点击标签事件
-        [label addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelClick:)]];
-        
-        [self.labelArray addObject:label];
-    }
-    menu.contentSize = CGSizeMake(labelW * 7, 0);
-    menu.showsHorizontalScrollIndicator = NO;
-    menu.bounces = NO;
-     
-    [self.view addSubview:menu];
-    
-    // 分隔条
-    CGFloat partBarX = 0;
-    CGFloat partBarY = CGRectGetMaxY(menu.frame);
-    CGFloat partBarH = HTPartBar;
-    CGFloat partBarW = self.view.frame.size.width;
-    UIView *partBar = [[UIView alloc] initWithFrame:CGRectMake(partBarX, partBarY, partBarW, partBarH)];
-    partBar.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:partBar];
-    */
     // 创建tableview
     CGRect newBounds = (CGRect){{0,0}, self.view.bounds.size};
     UITableView *vi = [[UITableView alloc] initWithFrame:newBounds style:UITableViewStylePlain];
@@ -171,62 +127,6 @@ static NSString *IDD_MENU = @"BB";
         return frameModel.cellHeight;
     }
 }
-
-/*
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    CGFloat labelW = self.view.frame.size.width / 5.0f;
-    CGFloat labelH = labelW * 1.2f;
-    return labelH + HTPartBar;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    CGFloat labelW = self.view.frame.size.width / 5.0f;
-    CGFloat labelH = labelW * 1.2f;
-    CGFloat menuX = 0;
-    CGFloat menuY = 0;
-    UIScrollView *menu = [[UIScrollView alloc] initWithFrame:CGRectMake(menuX, menuY, self.view.frame.size.width, labelH)];
-    menu.backgroundColor = [UIColor whiteColor];
-    
-    // 添加二手商品分类标签
-    for (int i = 0; i < 7; i++) {
-        CGFloat labelX = i * labelW;
-        CGFloat labelY = 0;
-        UIImageView *label = [[UIImageView alloc] init];
-        label.image = [UIImage imageNamed:[NSString stringWithFormat:@"label%d", i]];
-        label.frame = CGRectMake(labelX, labelY, labelW, labelH);
-        [menu addSubview:label];
-        label.tag = i;
-        label.userInteractionEnabled = YES;
-        
-        // 添加点击标签事件
-        [label addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelClick:)]];
-        
-        [self.labelArray addObject:label];
-    }
-    
-    menu.contentSize = CGSizeMake(labelW * 7, 0);
-    menu.showsHorizontalScrollIndicator = NO;
-    menu.bounces = NO;
-    
-    // 分隔条
-    CGFloat partBarX = 0;
-    CGFloat partBarY = labelH;
-    CGFloat partBarH = HTPartBar;
-    CGFloat partBarW = self.view.frame.size.width;
-    UIView *partBar = [[UIView alloc] initWithFrame:CGRectMake(partBarX, partBarY, partBarW, partBarH)];
-    partBar.backgroundColor = [UIColor lightGrayColor];
-    
-    // header总视图
-    UIView *headerView = [[UIView alloc] init];
-    headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, labelH + partBarH);
-    [headerView addSubview:menu];
-    [headerView addSubview:partBar];
-    
-    return headerView;
-}
-*/
 
 
 #pragma mark --------------------SecondhandBLDelegate----------------------

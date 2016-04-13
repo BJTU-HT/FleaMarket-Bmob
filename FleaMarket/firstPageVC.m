@@ -160,7 +160,7 @@ UILabel *refreshLabel;
             UITapGestureRecognizer *imageBtnGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageBtnTouchUpInside:)];
             [imageButton addGestureRecognizer:imageBtnGestureRecognizer];
             imageButton.userInteractionEnabled = YES;
-            imageButton.tag = imageButton.tag;
+            imageButton.tag = imageTagCount++;
             label.font = [UIFont systemFontOfSize: labelFont];
             label.textAlignment = NSTextAlignmentCenter;
             switch (j) {

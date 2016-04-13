@@ -16,14 +16,13 @@
     return [[self alloc] initWithModel:model];
 }
 
-+ (NSMutableArray *)frameModelWithArray:(NSMutableArray *)arr
++(NSMutableArray *)frameModelWithArray:(NSMutableArray *)arr
 {
     NSMutableArray *data = [NSMutableArray array];
     for (SecondhandVO *model in arr) {
         SecondhandFrameModel *newFrameModel = [self frameModelWithModel:model];
         [data addObject:newFrameModel];
     }
-    
     return data;
 }
 

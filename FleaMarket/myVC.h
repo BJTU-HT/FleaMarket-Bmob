@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface myVC : UIViewController
-
+@interface myVC : UIViewController<UITableViewDelegate, UITableViewDelegate>
+{
+    UITableView *myTableView;
+}
+@property (nonatomic,assign) NSInteger logInStatus;// logIn 1, logOut 0
 @end

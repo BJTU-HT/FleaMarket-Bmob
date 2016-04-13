@@ -9,10 +9,13 @@
 #ifndef FleaMarket_PrefixHeader_pch
 #define FleaMarket_PrefixHeader_pch
 
-#define screenWidth self.view.bounds.size.width
-#define screenHeight self.view.bounds.size.height;
-#define navgationBarHeight self.navigationController.navigationBar.bounds.size.height
-#define statusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define screenWidthPCH self.view.bounds.size.width
+#define screenHeightPCH self.view.bounds.size.height
+#define navgationBarHeightPCH self.navigationController.navigationBar.frame.size.height
+#define statusBarHeightPCH [UIApplication sharedApplication].statusBarFrame.size.height
+#define navStatusBarHeightPCH navgationBarHeightPCH + statusBarHeightPCH
+#define orangColor [UIColor colorWithRed:235/255.0 green:147/255.0 blue:33/255 alpha:1.0]
+#define ligtGrayColor [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1]
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

@@ -14,7 +14,7 @@
 
 static SecondhandDAO *sharedManager = nil;
 
-+ (SecondhandDAO *)sharedManager
++(SecondhandDAO *)sharedManager
 {
     static dispatch_once_t once;
     dispatch_once(&once, ^{
